@@ -3,6 +3,9 @@ Website for UKZN Tech Society
 Author
 
 Built and maintained by Abigail Moonsamy, 2026 STEM Director, UKZN Tech Society.
+
+Tech used:
+
 HTML5, CSS3 (grid, clip-path, custom properties, color-mix), vanilla JavaScript (ES6+)
 Canvas 2D API for the hero animation
 Inline SVG for the campus map
