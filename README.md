@@ -24,3 +24,32 @@ SEO:page title, meta description and Google Search Console verification.
 
 One HTML file. No framework, no build step, no server. Open it in a browser and it runs. All the content is fetched at load time from a Google Sheet that acts as a lightweight content management system. Editing the sheet updates the site; no redeploy needed.
 This was a deliberate design choice on my end because the people who maintain the site after me may not be developers, so the day-to-day editing had to be a spreadsheet, not a codebase.
+
+EDITING GUIDE
+       1. <style> ........ how everything LOOKS (colours, sizes, spacing)
+       2. <body> ......... the PAGE STRUCTURE (header, the 5 tabs, footer)
+       3. <script> ....... the LOGIC (pulls content from the Google Sheet)
+
+     WHERE DOES THE TEXT COME FROM?
+     Almost nothing is typed into this file. The events, team, gallery, about
+     text, etc. all come LIVE from the Google Sheet. To change that content you
+     edit the SHEET, not this file. This file only controls layout and styling.
+
+     HOW TO FIND A SECTION:
+     Use your editor's Find (Ctrl+F / Cmd+F) and search for these tags. Every
+     major part is labelled with a >>> SIGNPOST <<< comment:
+
+       >>> HERO           the big "One society. Two campuses." block up top
+       >>> HERO HEADING   the exact headline text/logic
+       >>> HERO TEXT      the paragraph under the headline
+       >>> GALLERY CAROUSEL   the scrolling photo strip on home
+       >>> ABOUT          the "What the Tech Society actually is" section
+       >>> VISION         the "Our vision" block
+       >>> EVENTS PAGE    the events tab (calendar + list)
+       >>> TEAM PAGE      the meet-the-team tab
+       >>> GALLERY PAGE   the full gallery tab
+       >>> JOIN PAGE      the membership / form tab
+       >>> HEADER         the top nav bar + logo
+       >>> FOOTER         the bottom bar
+       >>> SHEET FETCH    where the code reads the Google Sheet  (advanced)
+       >>> COLOURS        the master colour list  (in <style>)
